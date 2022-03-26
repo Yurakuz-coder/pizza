@@ -15,7 +15,7 @@
         const cartItemDOMElement = document.createElement('div');
 
         const attributeTemplate = attribute ?
-            `<p class="cart-item__attribute">${attribute}</p><input type="hidden" name="Аттрибут" value="${attribute}">` :
+            `<p class="cart-item__attribute">${attribute}</p><input type="hidden" id="${id}" name="Аттрибут" value="${attribute}">` :
             '';
 
         const cartItemTemplate = `
@@ -29,9 +29,9 @@
             </div>
             <div class="cart-item__content">
               <h3 class="cart-item__title">${name}</h3>
-              <input type="hidden" name="Товар" value="${name}">
-              <input class="js-cart-input-quantity" type="hidden" name="Количество" value="${quantity}">
-              <input class="js-cart-input-price" type="hidden" name="Цена" value="${price * quantity}">
+              <input type="hidden" id="${id}" name="Товар" value="${name}">
+              <input class="js-cart-input-quantity" type="hidden" id="${id}" name="Количество" value="${quantity}">
+              <input class="js-cart-input-price" type="hidden" id="${id}" name="Цена" value="${price * quantity}">
               ${attributeTemplate}
             </div>
           </div>
