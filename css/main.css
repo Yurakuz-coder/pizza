@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.375;
+    color: #1f1f1f;
+}
+
+.product__img {
+    max-width: 90%;
+    height: auto;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+    outline: none;
+}
+
+
+/* page-title start */
+
+.page-title {
+    font-size: 48px;
+    text-align: center;
+    margin: 0 auto 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+.page-title--accent {
+    color: #ffa650;
+}
+
+@media (max-width: 576px) {
+    .page-title {
+        font-size: 36px;
+    }
+}
+
+
+/* page-title end */

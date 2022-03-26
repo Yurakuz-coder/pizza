@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/section-top.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/header-page.css">
+    <link rel="stylesheet" href="css/section-about.css">
+    <link rel="stylesheet" href="css/section-contacts.css">
+    <link rel="stylesheet" href="css/footer-page.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/cart.css">
+
+
+
+
+    <title>OnlyPizza - ничего лишнего. Только пицца</title>
+</head>
+
+<header class="header-page">
+    <div class="container header-page__container">
+        <div class="header-page__start">
+            <div class="logo">
+                <img class="logo__img" src="img/logo.svg" alt="" height="55">
+            </div>
+        </div>
+        <div class="header-page__end">
+            <nav class="header-page__nav">
+                <ul class="header-page__ul">
+                    <li class="header-page__li">
+                        <a class="header-page__link" href="#" data-scroll-to="section-catalog">
+                            <img class="logo_menu" src="img/icons/pizza.svg" height="35">
+                            <span class="header-page__text">пицца</span>
+                        </a>
+                    </li>
+                    <li class="header-page__li">
+                        <a class="header-page__link" href="#" data-scroll-to="section-about">
+                            <img class="logo_menu" src="img/icons/info.svg" height="35">
+                            <span class="header-page__text">о нас</span>
+                        </a>
+                    </li>
+                    <li class="header-page__li">
+                        <a class="header-page__link" href="#" data-scroll-to="section-contacts">
+                            <img class="logo_menu" src="img/icons/map.svg" height="40">
+                            <span class="header-page__text">контакты</span>
+                        </a>
+                    </li>
+                    <li class="header-page__li">
+                        <a class="header-page__link" href="tel:+79999999999">
+                            <img class="logo_menu" src="img/icons/phone.svg" height="35">
+                            <span class="header-page__text">+7 (999) 999-99-99</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!--<div class="phone">
+                <a class="phone__item header-page__phone" href="tel:+79999999999">+7 (999) 999-99-99</a>
+            </div> -->
+            <div class="header-page__hamburger">
+                <button class="btn-menu" type="button" data-popup="popup-menu">
+            <span class="btn-menu__box">
+              <span class="btn-menu__inner"></span>
+            </span>
+          </button>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<section class="section-top">
+    <div class="container section-top__container">
+        <p class="section-top__info">только пицца для любителей пиццы</p>
+        <h1 class="section-top__title">Ничего лишнего</h1>
+        <div class="section-top__btn">
+            <button class="btn" type="button" data-scroll-to="section-catalog">Выбрать</button>
+        </div>
+    </div>
+</section>
+
+<!-- section-catalog -->
+<section class="section section-catalog" id="section-catalog">
+    <div class="container">
+        <header class="section__header">
+            <h2 class="section__title section__title--accent">Меню</h2>
+            <nav class="catalog-nav">
+                <ul class="catalog-nav__wrapper">
+                    <li class="catalog-nav__item">
+                        <button class="catalog-nav__btn is-active" type="button" data-filter="all">все</button>
+                    </li>
+                    <li class="catalog-nav__item">
+                        <button class="catalog-nav__btn" type="button" data-filter="mushrooms">грибные</button>
+                    </li>
+                    <li class="catalog-nav__item">
+                        <button class="catalog-nav__btn" type="button" data-filter="meat">мясные</button>
+                    </li>
+                    <li class="catalog-nav__item">
+                        <button class="catalog-nav__btn" type="button" data-filter="cheese">сырные</button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="catalog js-catalog">
+            <div class="catalog__item" data-category="mushrooms">
+                <div class="product catalog__product js-product" data-product-name="Салями" , data-product-price="850" , data-product-src="img/catalog/1.png" , data-product-attribute="35см">
+                    <img src="img/catalog/1.png" alt="" class="product__img">
+                    <div class="product__content">
+                        <h3 class="product__title">Салями</h3>
+                        <p class="product__description">Салями, картофель и морковь, огурцы маринованные, моцарелла, цыпленок, ветчина и французский соус </p>
+                    </div>
+                    <footer class="product__footer">
+                        <div class="product__sizes">
+                            <button data-product-attribute-price="850" data-product-attribute-value="35см" class="js-btn-product-attribute product__size is-active" type="button">35см</button>
+                            <button data-product-attribute-price="750" data-product-attribute-value="30см" class="js-btn-product-attribute product__size" type="button">30см</button>
+                            <button data-product-attribute-price="650" data-product-attribute-value="25см" class="js-btn-product-attribute product__size" type="button">25см</button>
+                        </div>
+                        <div class="product__bottom">
+                            <div class="product__price">
+                                <span class="product__price-value js-product-price-value">850</span>
+                                <span class="product__currency">&#8381;</span>
+                            </div>
+                            <button class="btn product__btn js-btn-add-to-cart" type="button">заказать</button>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+            <div class="catalog__item" data-category="meat">
+                <div class="product catalog__product js-product" data-product-name="Хит" , data-product-price="950" , data-product-src="img/catalog/2.png" , data-product-attribute="35см">
+                    <img src="img/catalog/2.png" alt="" class="product__img">
+                    <div class="product__content">
+                        <h3 class="product__title">Хит</h3>
+                        <p class="product__description">Картофель и морковь, огурцы маринованные, моцарелла, цыпленок, ветчина и французский соус </p>
+                    </div>
+                    <footer class="product__footer">
+                        <div class="product__sizes">
+                            <button data-product-attribute-price="950" data-product-attribute-value="35см" class="product__size js-btn-product-attribute is-active" type="button">35см</button>
+                            <button data-product-attribute-price="850" data-product-attribute-value="30см" class="product__size js-btn-product-attribute" type="button">30см</button>
+                            <button data-product-attribute-price="650" data-product-attribute-value="25см" class="product__size js-btn-product-attribute" type="button">25см</button>
+                        </div>
+                        <div class="product__bottom">
+                            <div class="product__price">
+                                <span class="product__price-value js-product-price-value">950</span>
+                                <span class="product__currency">&#8381;</span>
+                            </div>
+                            <button class="btn product__btn js-btn-add-to-cart" type="button">заказать</button>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+            <div class="catalog__item" data-category="cheese">
+                <div class="product catalog__product js-product" data-product-name="Ветчина-грибы" , data-product-price="880" , data-product-src="img/catalog/3.png" , data-product-attribute="35см">
+                    <img src="img/catalog/3.png" alt="" class="product__img">
+                    <div class="product__content">
+                        <h3 class="product__title">Ветчина-грибы</h3>
+                        <p class="product__description">Салями, картофель и морковь, огурцы маринованные, моцарелла, цыпленок, ветчина и французский соус </p>
+                    </div>
+                    <footer class="product__footer">
+                        <div class="product__sizes">
+                            <button data-product-attribute-price="880" data-product-attribute-value="35см" class="product__size js-btn-product-attribute is-active" type="button">35см</button>
+                            <button data-product-attribute-price="780" data-product-attribute-value="30см" class="product__size js-btn-product-attribute" type="button">30см</button>
+                            <button data-product-attribute-price="680" data-product-attribute-value="25см" class="product__size js-btn-product-attribute" type="button">25см</button>
+                        </div>
+                        <div class="product__bottom">
+                            <div class="product__price">
+                                <span class="product__price-value js-product-price-value">880</span>
+                                <span class="product__currency">&#8381;</span>
+                            </div>
+                            <button class="btn product__btn js-btn-add-to-cart" type="button">заказать</button>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+            <div class="catalog__item" data-category="cheese">
+                <div class="product catalog__product js-product" data-product-name="Карбонара" , data-product-price="1250" , data-product-src="img/catalog/4.png" , data-product-attribute="35см">
+                    <img src="img/catalog/4.png" alt="" class="product__img">
+                    <div class="product__content">
+                        <h3 class="product__title">Карбонара</h3>
+                        <p class="product__description">Салями, картофель и морковь, огурцы маринованные, моцарелла, цыпленок, ветчина и французский соус </p>
+                    </div>
+                    <footer class="product__footer">
+                        <div class="product__sizes">
+                            <button data-product-attribute-price="1250" data-product-attribute-value="35см" class="product__size js-btn-product-attribute is-active" type="button">35см</button>
+                            <button data-product-attribute-price="1000" data-product-attribute-value="30см" class="product__size js-btn-product-attribute" type="button">30см</button>
+                            <button data-product-attribute-price="850" data-product-attribute-value="25см" class="product__size js-btn-product-attribute" type="button">25см</button>
+                        </div>
+                        <div class="product__bottom">
+                            <div class="product__price">
+                                <span class="product__price-value js-product-price-value">1250</span>
+                                <span class="product__currency">&#8381;</span>
+                            </div>
+                            <button class="btn product__btn js-btn-add-to-cart" type="button">заказать</button>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+            <div class="catalog__item" data-category="cheese">
+                <div class="product catalog__product js-product" data-product-name="Фирменная" , data-product-price="890" , data-product-src="img/catalog/5.png" , data-product-attribute="35см">
+                    <img src="img/catalog/5.png" alt="" class="product__img">
+                    <div class="product__content">
+                        <h3 class="product__title">Фирменная</h3>
+                        <p class="product__description">Томатно-сливочный соус, бекон, моцарелла</p>
+                    </div>
+                    <footer class="product__footer">
+                        <div class="product__sizes">
+                            <button data-product-attribute-price="890" data-product-attribute-value="35см" class="product__size js-btn-product-attribute is-active" type="button">35см</button>
+                            <button data-product-attribute-price="750" data-product-attribute-value="30см" class="product__size js-btn-product-attribute" type="button">30см</button>
+                            <button data-product-attribute-price="620" data-product-attribute-value="25см" class="product__size js-btn-product-attribute" type="button">25см</button>
+                        </div>
+                        <div class="product__bottom">
+                            <div class="product__price">
+                                <span class="product__price-value js-product-price-value">890</span>
+                                <span class="product__currency">&#8381;</span>
+                            </div>
+                            <button class="btn product__btn js-btn-add-to-cart" type="button">заказать</button>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+            <div class="catalog__item" data-category="meat">
+                <div class="product catalog__product js-product" data-product-name="Ассорти" , data-product-price="850" , data-product-src="img/catalog/6.png" , data-product-attribute="35см">
+                    <img src="img/catalog/6.png" alt="" class="product__img">
+                    <div class="product__content">
+                        <h3 class="product__title">Ассорти</h3>
+                        <p class="product__description">Картофель моцарелла, цыпленок, грибы, ветчина и французский соус </p>
+                    </div>
+                    <footer class="product__footer">
+                        <div class="product__sizes">
+                            <button data-product-attribute-price="850" data-product-attribute-value="35см" class="product__size js-btn-product-attribute is-active" type="button">35см</button>
+                            <button data-product-attribute-price="700" data-product-attribute-value="30см" class="product__size js-btn-product-attribute" type="button">30см</button>
+                            <button data-product-attribute-price="500" data-product-attribute-value="25см" class="product__size js-btn-product-attribute" type="button">25см</button>
+                        </div>
+                        <div class="product__bottom">
+                            <div class="product__price">
+                                <span class="product__price-value js-product-price-value">850</span>
+                                <span class="product__currency">&#8381;</span>
+                            </div>
+                            <button class="btn product__btn js-btn-add-to-cart" type="button">заказать</button>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+            <div class="catalog__item" data-category="mushrooms">
+                <div class="product catalog__product js-product" data-product-name="Л-01" , data-product-price="920" , data-product-src="img/catalog/7.png" , data-product-attribute="35см">
+                    <img src="img/catalog/7.png" alt="" class="product__img">
+                    <div class="product__content">
+                        <h3 class="product__title">Л-01</h3>
+                        <p class="product__description">Томаты, моцарелла, цыпленок, ветчина и французский соус, секректный ингредиент </p>
+                    </div>
+                    <footer class="product__footer">
+                        <div class="product__sizes">
+                            <button data-product-attribute-price="920" data-product-attribute-value="35см" class="product__size js-btn-product-attribute is-active" type="button">35см</button>
+                            <button data-product-attribute-price="800" data-product-attribute-value="30см" class="product__size js-btn-product-attribute" type="button">30см</button>
+                            <button data-product-attribute-price="730" data-product-attribute-value="25см" class="product__size js-btn-product-attribute" type="button">25см</button>
+                        </div>
+                        <div class="product__bottom">
+                            <div class="product__price">
+                                <span class="product__price-value js-product-price-value">920</span>
+                                <span class="product__currency">&#8381;</span>
+                            </div>
+                            <button class="btn product__btn js-btn-add-to-cart" type="button">заказать</button>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+            <div class="catalog__item" data-category="mushrooms">
+                <div class="product catalog__product js-product" data-product-name="Три сыра" , data-product-price="990" , data-product-src="img/catalog/8.png" , data-product-attribute="35см">
+                    <img src="img/catalog/8.png" alt="" class="product__img">
+                    <div class="product__content">
+                        <h3 class="product__title">Три сыра</h3>
+                        <p class="product__description">Чеддер, камамбер, эдам</p>
+                    </div>
+                    <footer class="product__footer">
+                        <div class="product__sizes">
+                            <button data-product-attribute-price="990" data-product-attribute-value="35см" class="product__size js-btn-product-attribute is-active" type="button">35см</button>
+                            <button data-product-attribute-price="800" data-product-attribute-value="30см" class="product__size js-btn-product-attribute" type="button">30см</button>
+                            <button data-product-attribute-price="750" data-product-attribute-value="25см" class="product__size js-btn-product-attribute" type="button">25см</button>
+                        </div>
+                        <div class="product__bottom">
+                            <div class="product__price">
+                                <span class="product__price-value js-product-price-value">990</span>
+                                <span class="product__currency">&#8381;</span>
+                            </div>
+                            <button class="btn product__btn js-btn-add-to-cart" type="button">заказать</button>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+            <div class="catalog__item" data-category="mushrooms">
+                <div class="product catalog__product js-product" data-product-name="Мясная" , data-product-price="950" , data-product-src="img/catalog/9.png" , data-product-attribute="35см">
+                    <img src="img/catalog/9.png" alt="" class="product__img">
+                    <div class="product__content">
+                        <h3 class="product__title">Мясная</h3>
+                        <p class="product__description">Курица, говядина, сливочный соус, салями, огурцы маринованные, томаты, грибы, бекон</p>
+                    </div>
+                    <footer class="product__footer">
+                        <div class="product__sizes">
+                            <button data-product-attribute-price="950" data-product-attribute-value="35см" class="product__size js-btn-product-attribute is-active" type="button">35см</button>
+                            <button data-product-attribute-price="700" data-product-attribute-value="30см" class="product__size js-btn-product-attribute" type="button">30см</button>
+                            <button data-product-attribute-price="600" data-product-attribute-value="25см" class="product__size js-btn-product-attribute" type="button">25см</button>
+                        </div>
+                        <div class="product__bottom">
+                            <div class="product__price">
+                                <span class="product__price-value js-product-price-value">950</span>
+                                <span class="product__currency">&#8381;</span>
+                            </div>
+                            <button class="btn product__btn js-btn-add-to-cart" type="button">заказать</button>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /.section-catalog -->
+
+<!--section about-->
+<section class="section section-about">
+    <img src="img/about/bg.jpg" alt="" class="section-about__img">
+    <div class="container section-about__container">
+        <div class="section-about__content">
+            <h2 class="section__title section-about__title">О нас</h2>
+            <p class="section-about__text">Да-да, у нас продается только пицца и ничего, кроме пиццы! Это концепция нашего заведения, поскольку мы считаем, что лучше сосредоточиться на чем-то одном, но сделать это на высшем уровне. При изготовлении пиццы мы используем только качественные
+                ингредиенты. Наши повара постоянно проходят обучение и повышение квалификации у лучших пиццемейкеров России. Мы существуем на рынке города не так долго, но уже заслужили хорошую репутацию наших клиентов. Доставка по городу осуществляется
+                в течение часа. Если вам пицца пришла позже, то она за счет компании.</p>
+        </div>
+    </div>
+</section>
+<!--section about-->
+<section class="srction section-contacts">
+    <div class="container section-contacts__container">
+        <header class="section__header">
+            <h2 class="section__title section-contacts__title">Контакты</h2>
+        </header>
+        <div class="contacts">
+            <div class="contacts__start">
+                <div class="contacts__map" id="ymap">
+
+                </div>
+            </div>
+            <div class="contacts__end">
+                <div class="contacts__item">
+                    <h3 class="contacts__title">Адрес</h3>
+                    <p class="contacts__text">г.Сосновоборск, ул. Ленинского Комсомола д. 4</p>
+                </div>
+                <div class="contacts__item">
+                    <h3 class="contacts__title">Телефон</h3>
+                    <p class="contacts__text">
+                        <a class="contacts__phone" href="tel:+79999999999">+7 (999) 999-99-99</a>
+                    </p>
+                </div>
+                <div class="contacts__item">
+                    <h3 class="contacts__title">Социальные сети</h3>
+                    <ul class="socials">
+                        <li class="socials__item">
+                            <a href="#" class="socials__link" target="_blank">
+                                <svg class="socials__icon socials__icon--vk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 112.2 112.2" width="35" height="35">
+                                    <g>
+                                            <circle cx="56.1" cy="56.1" r="56.1" />
+                                            <path class="socials__logo" d="M54,80.7h4.4a3.33,3.33,0,0,0,2-.9,3.37,3.37,0,0,0,.6-1.9s-.1-5.9,2.7-6.8,6.2,5.7,9.9,8.2c2.8,1.9,4.9,1.5,4.9,1.5l9.8-.1s5.1-.3,2.7-4.4c-.2-.3-1.4-3-7.3-8.5-6.2-5.7-5.3-4.8,2.1-14.7,4.5-6,6.3-9.7,5.8-11.3s-3.9-1.1-3.9-1.1l-11.1.1a2.32,2.32,0,0,0-1.4.3,3.58,3.58,0,0,0-1,1.2A60,60,0,0,1,70,50.9c-4.9,8.4-6.9,8.8-7.7,8.3-1.9-1.2-1.4-4.9-1.4-7.5,0-8.1,1.2-11.5-2.4-12.4a17.68,17.68,0,0,0-5.2-.5c-4,0-7.3,0-9.2.9-1.3.6-2.2,2-1.6,2.1a5.05,5.05,0,0,1,3.3,1.6c1.1,1.5,1.1,5,1.1,5s.7,9.6-1.5,10.7c-1.5.8-3.5-.8-7.9-8.4a67.05,67.05,0,0,1-4-8.2,2.82,2.82,0,0,0-.9-1.2,5.13,5.13,0,0,0-1.7-.7l-10.5.1s-1.6,0-2.2.7,0,1.9,0,1.9,8.2,19.3,17.6,29c8.5,9,18.2,8.4,18.2,8.4Z" />
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <!--  <li class="socials__item">
+                            <a href="#" class="socials__link" target="_blank">
+                                <svg class="socials__icon socials__icon--fb" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 112.2 112.2" width="35" height="35">
+                                    <g>
+                                        <circle cx="56.1" cy="56.1" r="56.1" />
+                                        <path class="socials__logo" d="M70.2,58.3h-10V95H45V58.3H37.8V45.4H45V37.1c0-6,2.8-15.3,15.3-15.3H71.5V34.3H63.3c-1.3,0-3.2.7-3.2,3.5v7.6H71.4Z" />
+                                    </g>
+                            </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link" target="_blank">
+                                <svg class="socials__icon socials__icon--inst" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="35" height="35">
+                                    <g>
+                                        <path  d="M332.3,136.2H179.7a44.21,44.21,0,0,0-44.2,44.2V333a44.21,44.21,0,0,0,44.2,44.2H332.3A44.21,44.21,0,0,0,376.5,333V180.4A44.21,44.21,0,0,0,332.3,136.2ZM256,336a79.3,79.3,0,1,1,79.3-79.3A79.42,79.42,0,0,1,256,336Zm81.9-142.2A18.8,18.8,0,1,1,356.7,175,18.78,18.78,0,0,1,337.9,193.8Z" />
+                                        <path  d="M256,210.9a45.8,45.8,0,1,0,45.8,45.8A45.86,45.86,0,0,0,256,210.9Z" />
+                                        <path  d="M256,0C114.6,0,0,114.6,0,256S114.6,512,256,512,512,397.4,512,256,397.4,0,256,0ZM410,333a77.78,77.78,0,0,1-77.7,77.7H179.7A77.78,77.78,0,0,1,102,333V180.4a77.84,77.84,0,0,1,77.7-77.7H332.3A77.84,77.84,0,0,1,410,180.4Z" />
+                                    </g>
+                            </svg>
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--section-contacts-->
+
+<!--footer page-->
+<footer class="footer-page">
+    <div class="container">
+        <div class="footer-page__text">OnlyPizza 2022</div>
+    </div>
+</footer>
+<!--footer page-->
+
+<div class="popup popup-menu">
+    <div class="popup__wrapper">
+        <div class="popup__inner">
+            <div class="popup__content popup__content--fluid popup__content--centered">
+                <button class="btn-close popup__btn-close popup-close"></button>
+                <nav class="mobile-menu popup__mobile-menu">
+                    <ul class="mobile-menu__ul">
+                        <li class="mobile-menu__li">
+                            <a class="mobile-menu__link popup-close" href="#" data-scroll-to="section-catalog">Пицца</a>
+                        </li>
+                        <li class="mobile-menu__li">
+                            <a class="mobile-menu__link popup-close" href="#" data-scroll-to="section-about">О нас</a>
+                        </li>
+                        <li class="mobile-menu__li">
+                            <a class="mobile-menu__link popup-close" href="#" data-scroll-to="section-contacts">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="phone popup__phone">
+                    <a class="phone__item phone__item--accent" href="tel:+79999999999">+7 (999) 999-99-99</a>
+                </div>
+                <ul class="socials">
+                    <li class="socials__item">
+                        <a href="#" class="socials__link" target="_blank">
+                            <svg class="socials__icon socials__icon--vk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 112.2 112.2" width="35" height="35">
+                  <g>
+                    <circle cx="56.1" cy="56.1" r="56.1" />
+                    <path class="socials__logo" d="M54,80.7h4.4a3.33,3.33,0,0,0,2-.9,3.37,3.37,0,0,0,.6-1.9s-.1-5.9,2.7-6.8,6.2,5.7,9.9,8.2c2.8,1.9,4.9,1.5,4.9,1.5l9.8-.1s5.1-.3,2.7-4.4c-.2-.3-1.4-3-7.3-8.5-6.2-5.7-5.3-4.8,2.1-14.7,4.5-6,6.3-9.7,5.8-11.3s-3.9-1.1-3.9-1.1l-11.1.1a2.32,2.32,0,0,0-1.4.3,3.58,3.58,0,0,0-1,1.2A60,60,0,0,1,70,50.9c-4.9,8.4-6.9,8.8-7.7,8.3-1.9-1.2-1.4-4.9-1.4-7.5,0-8.1,1.2-11.5-2.4-12.4a17.68,17.68,0,0,0-5.2-.5c-4,0-7.3,0-9.2.9-1.3.6-2.2,2-1.6,2.1a5.05,5.05,0,0,1,3.3,1.6c1.1,1.5,1.1,5,1.1,5s.7,9.6-1.5,10.7c-1.5.8-3.5-.8-7.9-8.4a67.05,67.05,0,0,1-4-8.2,2.82,2.82,0,0,0-.9-1.2,5.13,5.13,0,0,0-1.7-.7l-10.5.1s-1.6,0-2.2.7,0,1.9,0,1.9,8.2,19.3,17.6,29c8.5,9,18.2,8.4,18.2,8.4Z" />
+                  </g>
+                </svg>
+                        </a>
+                    </li>
+                    <!--  <li class="socials__item">
+                        <a href="#" class="socials__link" target="_blank">
+                            <svg class="socials__icon socials__icon--fb" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 112.2 112.2" width="35" height="35">
+                  <g>
+                    <circle cx="56.1" cy="56.1" r="56.1" />
+                    <path class="socials__logo" d="M70.2,58.3h-10V95H45V58.3H37.8V45.4H45V37.1c0-6,2.8-15.3,15.3-15.3H71.5V34.3H63.3c-1.3,0-3.2.7-3.2,3.5v7.6H71.4Z" />
+                  </g>
+                </svg>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="#" class="socials__link" target="_blank">
+                            <svg class="socials__icon socials__icon--inst" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="35" height="35">
+                  <g>
+                    <path d="M332.3,136.2H179.7a44.21,44.21,0,0,0-44.2,44.2V333a44.21,44.21,0,0,0,44.2,44.2H332.3A44.21,44.21,0,0,0,376.5,333V180.4A44.21,44.21,0,0,0,332.3,136.2ZM256,336a79.3,79.3,0,1,1,79.3-79.3A79.42,79.42,0,0,1,256,336Zm81.9-142.2A18.8,18.8,0,1,1,356.7,175,18.78,18.78,0,0,1,337.9,193.8Z" />
+                    <path d="M256,210.9a45.8,45.8,0,1,0,45.8,45.8A45.86,45.86,0,0,0,256,210.9Z" />
+                    <path d="M256,0C114.6,0,0,114.6,0,256S114.6,512,256,512,512,397.4,512,256,397.4,0,256,0ZM410,333a77.78,77.78,0,0,1-77.7,77.7H179.7A77.78,77.78,0,0,1,102,333V180.4a77.84,77.84,0,0,1,77.7-77.7H332.3A77.84,77.84,0,0,1,410,180.4Z" />
+                  </g>
+                </svg>
+                        </a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- popup-order -->
+<div class="popup popup-order">
+    <div class="popup__wrapper">
+        <div class="popup__inner">
+            <div class="popup__content">
+                <button class="btn-close popup__btn-close popup-close"></button>
+                <h2 class="page-title">Корзина</h2>
+                <div class="cart js-cart-wrapper">
+                    <form class="form cart__form form-send">
+                        <div class="cart__items js-cart">
+                        </div>
+                        <div class="cart__totals">
+                            <div>Итого: <span class="cart__bold"><span class="js-cart-total-price"></span> ₽</span>
+                            </div>
+                        </div>
+                        <div class="order">
+                            <h3 class="order__title">Заполните форму</h3>
+                            <div class="form__main">
+                                <input class="form__input" type="text" name="Имя" placeholder="Имя" required="">
+                                <input class="form__input" type="text" name="Телефон" placeholder="Телефон" required="">
+                                <input class="form__input" type="text" name="Адрес" placeholder="Адрес" required="">
+                                <input class="js-cart-total-price-input" type="hidden" name="Общая сумма">
+                                <select class="form__input" name="оплата">
+                    <option value="Оплата наличными">Оплата наличными</option>
+                    <option value="Оплата картой">Оплата картой</option>
+                  </select>
+                                <button class="btn form__btn" type="submit">Отправить</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="cart__empty">
+                        <p class="cart__info">Нет товаров</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.popup-order -->
+
+<button class="cart-btn" data-popup="popup-order">
+    <span class="cart-btn__counter js-cart-total-count-items">0</span>
+    <svg class="cart-btn__icon" viewBox="0 -31 512.00026 512" xmlns="http://www.w3.org/2000/svg">
+      <path d="m164.960938 300.003906h.023437c.019531 0 .039063-.003906.058594-.003906h271.957031c6.695312 0 12.582031-4.441406 14.421875-10.878906l60-210c1.292969-4.527344.386719-9.394532-2.445313-13.152344-2.835937-3.757812-7.269531-5.96875-11.976562-5.96875h-366.632812l-10.722657-48.253906c-1.527343-6.863282-7.613281-11.746094-14.644531-11.746094h-90c-8.285156 0-15 6.714844-15 15s6.714844 15 15 15h77.96875c1.898438 8.550781 51.3125 230.917969 54.15625 243.710938-15.941406 6.929687-27.125 22.824218-27.125 41.289062 0 24.8125 20.1875 45 45 45h272c8.285156 0 15-6.714844 15-15s-6.714844-15-15-15h-272c-8.269531 0-15-6.730469-15-15 0-8.257812 6.707031-14.976562 14.960938-14.996094zm312.152343-210.003906-51.429687 180h-248.652344l-40-180zm0 0" />
+      <path d="m150 405c0 24.8125 20.1875 45 45 45s45-20.1875 45-45-20.1875-45-45-45-45 20.1875-45 45zm45-15c8.269531 0 15 6.730469 15 15s-6.730469 15-15 15-15-6.730469-15-15 6.730469-15 15-15zm0 0" />
+      <path d="m362 405c0 24.8125 20.1875 45 45 45s45-20.1875 45-45-20.1875-45-45-45-45 20.1875-45 45zm45-15c8.269531 0 15 6.730469 15 15s-6.730469 15-15 15-15-6.730469-15-15 6.730469-15 15-15zm0 0" />
+    </svg>
+  </button>
+
+<!-- popup-thanks -->
+<div class="popup popup-thanks">
+    <div class="popup__wrapper">
+        <div class="popup__inner">
+            <div class="popup__content">
+                <button class="btn-close popup__btn-close popup-close"></button>
+                <h2 class="page-title popup__title">Успешно отправлено</h2>
+                <p class="popup__subtitle">Мы уже начали готовить вашу пиццу</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.popup-thanks -->
+
+<!-- popup-error -->
+<div class="popup popup-error">
+    <div class="popup__wrapper">
+        <div class="popup__inner">
+            <div class="popup__content">
+                <button class="btn-close popup__btn-close popup-close"></button>
+                <h2 class="page-title popup__title">Произошла ошибка</h2>
+                <p class="popup__subtitle">Пожалуйста, сделайте заказ по номеру <a class="popup__link" href="+79999999999">+7 (999) 999-99-99</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.popup-error -->
+
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script src="https://unpkg.com/focus-visible@5.2.0/dist/focus-visible.js"></script>
+
+<script src="js/cart.js"></script>
+<script src="js/myLib.js"></script>
+<script src="js/popup.js"></script>
+<script src="js/scrollTo.js"></script>
+<script src="js/catalog.js"></script>
+<script src="js/product.js"></script>
+<script src="js/map.js"></script>
+<script src="js/form.js"></script>
+
+</body>
+
+</html>
